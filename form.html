@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marth8</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                margin: 0;
+                height: 100vh;
+                background-color: rgb(8, 49, 8);
+            }
+            .story {
+                color: red;
+                font-size: 150%;
+            }
+            .square {
+                position: absolute;
+                bottom: -100px;
+                background-color: rgb(125, 242, 8);
+                animation: boxes 10s infinite ease-in-out;
+            }
+            .square:nth-child(1) {
+                width: 75px;
+                height: 75px;
+                left: 7%;
+            }
+            .square:nth-child(2) {
+                width: 65px;
+                height: 65px;
+                left: 15%;
+                animation-delay: 4s;
+            }
+            .square:nth-child(3) {
+                width: 85px;
+                height: 85px;
+                left: 45%;
+                animation-delay: 6s;
+            }
+            .square:nth-child(4) {
+                width: 40px;
+                height: 40px;
+                left: 55%;
+                animation-delay: 8s;
+            }
+            .square:nth-child(5) {
+                width: 70px;
+                height: 70px;
+                left: 95%;
+                animation-delay: 5s;
+            }
+            .square:nth-child(6) {
+                width: 30px;
+                height: 30px;
+                left: 25%;
+                animation-delay: 3s;
+            }
+            .square:nth-child(7) {
+                width: 40px;
+                height: 40px;
+                left: 50%;
+                animation-delay: 7s;
+            }
+            .square:nth-child(8) {
+                width: 80px;
+                height: 80px;
+                left: 35%;
+                animation-delay: 10s;
+            }
+            .square:nth-child(9) {
+                width: 55px;
+                height: 55px;
+                left: 10%;
+                animation-delay: 7s;
+            }
+            .square:nth-child(10) {
+                width: 45px;
+                height: 45px;
+                left: 90%;
+                animation-delay: 5s;
+            }
+            @keyframes boxes {
+                0% {
+                    bottom: -100px;
+                }
+                100% {
+                    bottom: 100%;
+                    transform: rotate(180deg);
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <p><span class="story">ВНИМАНИЕ, ЗЛОУМЫШЛЕННИКИ УКРАЛИ ВАШИ ПОДАРКИ НА 8 МАРТА!!! Чтобы их вернуть, вам предстоит выполнить их задания и получить пароль от волшебной фразы, которая поможет вернуть вам подарки. Удачи в прохождении!!!</span></p>
+        <script src="./cs.js" type="application/javascript"></script>
+        <input type="text" id="text"></input>
+        <button onclick="func()"> Ввод</button>
+    </body>
+</html>
